@@ -174,32 +174,49 @@ footer ul li a:hover {
 }
 
 /* Contact Form Styling */
-#contact-container {
-    background-color: #5E7E69;
-    padding: 40px;
-    border-radius: 10px;
-    max-width: 600px;
-    margin: 50px auto;
-    color: #FCEEE5;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-#contact-container h2 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #C2632D;
-}
-
-#contact-form {
+/* Contact Form Section */
+#contact-section {
+    padding: 60px 20px;
+    background-color: #FCEEE5;
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-wrapper {
+    background-color: #FFFFFF;
+    max-width: 600px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.contact-wrapper h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #5E7E69;
+}
+
+.contact-wrapper p {
+    font-size: 1.1em;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+#contact-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
 }
 
 #contact-form label {
-    font-size: 1.2em;
+    display: block;
+    font-size: 1em;
     font-weight: bold;
+    color: #5E7E69;
+    margin-bottom: 5px;
 }
 
 #contact-form input,
@@ -207,30 +224,55 @@ footer ul li a:hover {
     width: 100%;
     padding: 12px;
     font-size: 1em;
-    border: 2px solid #C2632D;
-    border-radius: 5px;
-    background-color: #FCEEE5;
-    color: #333;
+    border: 2px solid #E0E0E0;
+    border-radius: 8px;
+    background-color: #F9F9F9;
+    transition: border-color 0.3s;
 }
 
 #contact-form input:focus,
 #contact-form textarea:focus {
-    border-color: #552928;
+    border-color: #5E7E69;
     outline: none;
+    background-color: #FFF;
 }
 
-#contact-form button {
-    padding: 15px;
+#contact-form textarea {
+    resize: none;
+}
+
+.submit-button {
+    background-color: #5E7E69;
+    color: #FFFFFF;
+    padding: 12px 20px;
     font-size: 1.2em;
     font-weight: bold;
-    color: #FFFFFF;
-    background-color: #C2632D;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-#contact-form button:hover {
+.submit-button:hover {
+    background-color: #C2632D;
+    transform: scale(1.05);
+}
+
+.submit-button:active {
     background-color: #552928;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        padding: 20px;
+    }
+
+    #contact-form label {
+        font-size: 0.9em;
+    }
+
+    .submit-button {
+        font-size: 1em;
+    }
 }
