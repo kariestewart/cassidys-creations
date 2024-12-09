@@ -174,3 +174,65 @@ footer ul li a {
 footer ul li a:hover {
     color: #5E7E69;
 }
+
+/* Contact Form Styling */
+#contact-container {
+    background-color: #5E7E69;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 50px auto;
+    color: #FCEEE5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#contact-container h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #C2632D;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact-form label {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    border: 2px solid #C2632D;
+    border-radius: 5px;
+    background-color: #FCEEE5;
+    color: #333;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: #552928;
+    outline: none;
+}
+
+#contact-form button {
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #C2632D;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #552928;
+}
